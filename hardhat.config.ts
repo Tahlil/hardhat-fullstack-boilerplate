@@ -15,6 +15,7 @@ const chainIds = {
   kovan: 42,
   mainnet: 1,
   rinkeby: 4,
+  sepolia: 11155111,
   ropsten: 3,
   bsctest: 97,
   bscmain: 56,
@@ -83,6 +84,11 @@ const config: HardhatUserConfig = {
       url: getRPCURL('goerli', defaultRPCNodeProvider),
       accounts: [`0x${PRIVATE_KEY}`],
       chainId: chainIds.goerli,
+    },
+    sepolia: {
+      url: getRPCURL('sepolia', defaultRPCNodeProvider),
+      accounts: [`0x${PRIVATE_KEY}`],
+      chainId: chainIds.sepolia,
     },
     mainnet: {
       url: getRPCURL('mainnet', defaultRPCNodeProvider),
