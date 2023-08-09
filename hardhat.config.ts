@@ -40,7 +40,7 @@ const getRPCURL = (network: string, RPCNodeProvider: string) => {
       return `https://speedy-nodes-nyc.moralis.io/${API_KEY}/eth/${network}`;
       
     case "alchemy":
-      return `https://eth-${network}.alchemyapi.io/v2/${API_KEY}`;
+      return `https://eth-${network}.g.alchemy.com/v2/${API_KEY}`;
   
     case "infura":
       return `https://${network}.infura.io/v3/${API_KEY}`;
